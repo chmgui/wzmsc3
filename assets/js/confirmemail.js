@@ -8,8 +8,8 @@ jQuery.fn.confirmEmailErrorClear = function(options){
 }
 
 function confirmEmail() {
-        var email = document.getElementById("entry.1065046570").value
-        var confemail = document.getElementById("entry.1045781291").value
+        var email = document.getElementById("entry.1045781291").value
+        var confemail = document.getElementById("entry.1065046570").value
         if(email != confemail) {
             
            // var location1 = $(this).find('div[id="insert_email_confirm_error"]');
@@ -18,7 +18,7 @@ function confirmEmail() {
            // console.log( location1 );
             // $('#contact-page').confirmEmailError();
             var email_conf1 = document.getElementById("email_confirm_error")
-            email_conf1.textContent = " 邮箱地址不匹配! " 
+            email_conf1.textContent = "Email addresses don't match!" 
             email_conf1.style.color = "red" 
 
             //alert('Email Not Matching!');

@@ -5,7 +5,7 @@
 		var element = this; 
 		var submit = $(this).find('div[id="submit-contact-form"]');
 		$('<div class="col-lg-4" style="text-align:right;"><label id="ebcaptchatext"></label></div>').insertBefore(submit);
-		$('<div class="col-lg-4"><input type="text"  id="ebcaptchainput" placeholder="你的答案*"/></div>').insertBefore(submit);
+		$('<div class="col-lg-4"><input type="text"  id="ebcaptchainput" placeholder="Enter answer here*"/></div>').insertBefore(submit);
 		var input = this.find('#ebcaptchainput'); 
 		var label = this.find('#ebcaptchatext'); 
 		
@@ -19,7 +19,7 @@
 		randomNr1 = Math.floor(Math.random()*10);
 		randomNr2 = Math.floor(Math.random()*10);
 		totalNr = randomNr1 + randomNr2;
-		var texti = ""+randomNr1+" + "+randomNr2+" 等于 ?";
+		var texti = "What is "+randomNr1+" + "+randomNr2+" ?";
 		$(label).text(texti);
 		
 	
